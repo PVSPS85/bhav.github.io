@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #EEF2FF 0%, #FEF3F2 100%);
+    color: #1F2937;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #EEE;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #6366F1;
+}
+
+.profile-info h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #1F2937;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #6366F1;
+    font-weight: 500;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: #F3F4F6;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #1F2937;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #6366F1;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.social-links a i {
+    font-size: 1.2rem;
+}
+
+.about-section, .education-section, .objective-section {
+    margin-bottom: 30px;
+}
+
+.about-section h2, .education-section h2, .objective-section h2 {
+    color: #6366F1;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.education-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #F9FAFB;
+    border-radius: 12px;
+}
+
+.education-item h3 {
+    margin-bottom: 5px;
+    color: #1F2937;
+}
+
+.date {
+    color: #6366F1;
+    font-weight: 600;
+}
+
+.objective-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+footer {
+    text-align: center;
+    color: #6B7280;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .social-links {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-card {
+        padding: 25px;
+    }
+    
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+    
+    .profile-card {
+        padding: 20px;
+    }
+    
+    .profile-info h1 {
+        font-size: 1.8rem;
+    }
+}
